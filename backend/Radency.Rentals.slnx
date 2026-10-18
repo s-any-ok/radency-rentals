@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Radency.Rentals.Api/Radency.Rentals.Api.csproj" />
+    <Project Path="src/Radency.Rentals.Application/Radency.Rentals.Application.csproj" />
+    <Project Path="src/Radency.Rentals.Domain/Radency.Rentals.Domain.csproj" />
+    <Project Path="src/Radency.Rentals.Infrastructure/Radency.Rentals.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Radency.Rentals.UnitTests/Radency.Rentals.UnitTests.csproj" />
+  </Folder>
+</Solution>

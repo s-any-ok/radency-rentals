@@ -1,0 +1,17 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    # SQL Server images are amd64-only; on Apple Silicon Docker runs them through Rosetta.
+    platform: linux/amd64
+    container_name: radency-sqlserver
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "Radency_Str0ng!Pass"
+      MSSQL_PID: "Developer"
+    ports:
+      - "1433:1433"
+    volumes:
+      - radency-sql-data:/var/opt/mssql
+
+volumes:
+  radency-sql-data:
